@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 import cv2
-from numpy.lib.ufunclike import fix
 
 """cv2.imread('path')"""
 img = cv2.imread('00-puppy.jpg')
