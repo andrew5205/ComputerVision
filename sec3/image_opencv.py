@@ -51,7 +51,10 @@ plt.imshow(img_gray)
 
 
 
-""" cv2.resize() """
+""" cv2.resize(src,(w,h)) 
+shape -> (h,w,c)
+"""
+
 img_resize = cv2.resize(fix_img,(1000,500))
 plt.imshow(img_resize)
 # plt.show()
