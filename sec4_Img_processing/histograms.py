@@ -57,6 +57,8 @@ img_show_bricks = cv2.cvtColor(img_blue_bricks, cv2.COLOR_BGR2RGB)
 print('################################')
 ##############################################################################################
 
+""" cv2.calcHist([src], channels=[], mask=None, histSize=[256], ranges=[0, 256])"""
+
 # OpenCV BGR
 his_val = cv2.calcHist([img_blue_bricks], channels=[0], mask=None, histSize=[256], ranges=[0, 256])
 print(his_val.shape)            # (256, 1)
