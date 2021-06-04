@@ -95,6 +95,57 @@ for i, col in enumerate(color):
 
 plt.title('Histogram For dark_horse')
 plt.show()
+##########################################################################################################
+
+
+
+img_rainbow = cv2.imread('rainbow.jpg')
+img_show_rainbow = cv2.cvtColor(img_rainbow, cv2.COLOR_BGR2RGB)
+
+# print(img_rainbow.shape)            # (550, 413, 3)
+
+
+""" creat a mask - pass in the shape from img_rainbow """
+mask = np.zeros(img_rainbow.shape[:2], np.uint8)
+# plt.imshow(mask, cmap='gray')
+# plt.show()
+
+mask[300:400, 100:400] = 255
+# plt.imshow(mask, cmap='gray')
+# plt.show()
+
+
+
+
+img_masked = cv2.bitwise_and(img_rainbow, img_rainbow, mask=mask)
+img_show_rainbow_masked = cv2.bitwise_and(img_show_rainbow, img_show_rainbow, mask=mask)
+
+
+# plt.imshow(img_show_rainbow_masked)
+# plt.show()
+
+
+
+# opencv BGR
+hist_mask_val_red = cv2.calcHist([img_rainbow], channels=[2], mask=mask, histSize=[256], ranges=[0,256])
+
+hist_no_mask_val_red = cv2.calcHist([img_rainbow], channels=[2], mask=None, histSize=[256], ranges=[0,256])
+
+plt.plot(hist_mask_val_red)
+plt.title('hist_mask_val_red')
+plt.show()
+
+
+plt.plot(hist_no_mask_val_red)
+plt.title('hist_no_mask_val_red')
+plt.show()
+##########################################################################################################
+
+
+
+
+
+
 
 
 
