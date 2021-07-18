@@ -1,0 +1,118 @@
+
+installation took about 3 min 
+pip install keras
+pip install tensorflow
+
+
+(base) andrews-mbp-4:~ andrew$ pip install keras
+Collecting keras
+  Downloading Keras-2.4.3-py2.py3-none-any.whl (36 kB)
+Requirement already satisfied: pyyaml in /opt/anaconda3/lib/python3.8/site-packages (from keras) (5.3.1)
+Requirement already satisfied: h5py in /opt/anaconda3/lib/python3.8/site-packages (from keras) (2.10.0)
+Requirement already satisfied: scipy>=0.14 in /opt/anaconda3/lib/python3.8/site-packages (from keras) (1.5.2)
+Requirement already satisfied: numpy>=1.9.1 in /opt/anaconda3/lib/python3.8/site-packages (from keras) (1.19.2)
+Requirement already satisfied: six in /opt/anaconda3/lib/python3.8/site-packages (from h5py->keras) (1.15.0)
+Installing collected packages: keras
+Successfully installed keras-2.4.3
+(base) andrews-mbp-4:~ andrew$ pip install tensorflow
+Collecting tensorflow
+  Downloading tensorflow-2.5.0-cp38-cp38-macosx_10_11_x86_64.whl (195.7 MB)
+     |████████████████████████████████| 195.7 MB 90 kB/s 
+Collecting protobuf>=3.9.2
+  Downloading protobuf-3.17.3-cp38-cp38-macosx_10_9_x86_64.whl (1.0 MB)
+     |████████████████████████████████| 1.0 MB 34.2 MB/s 
+Collecting gast==0.4.0
+  Downloading gast-0.4.0-py3-none-any.whl (9.8 kB)
+Collecting keras-preprocessing~=1.1.2
+  Downloading Keras_Preprocessing-1.1.2-py2.py3-none-any.whl (42 kB)
+     |████████████████████████████████| 42 kB 2.1 MB/s 
+Collecting tensorflow-estimator<2.6.0,>=2.5.0rc0
+  Downloading tensorflow_estimator-2.5.0-py2.py3-none-any.whl (462 kB)
+     |████████████████████████████████| 462 kB 4.4 MB/s 
+Collecting absl-py~=0.10
+  Downloading absl_py-0.13.0-py3-none-any.whl (132 kB)
+     |████████████████████████████████| 132 kB 11.7 MB/s 
+Collecting google-pasta~=0.2
+  Downloading google_pasta-0.2.0-py3-none-any.whl (57 kB)
+     |████████████████████████████████| 57 kB 6.2 MB/s 
+Collecting termcolor~=1.1.0
+  Downloading termcolor-1.1.0.tar.gz (3.9 kB)
+Collecting tensorboard~=2.5
+  Downloading tensorboard-2.5.0-py3-none-any.whl (6.0 MB)
+     |████████████████████████████████| 6.0 MB 3.8 MB/s 
+Requirement already satisfied: six~=1.15.0 in /opt/anaconda3/lib/python3.8/site-packages (from tensorflow) (1.15.0)
+Collecting opt-einsum~=3.3.0
+  Downloading opt_einsum-3.3.0-py3-none-any.whl (65 kB)
+     |████████████████████████████████| 65 kB 3.1 MB/s 
+Collecting flatbuffers~=1.12.0
+  Downloading flatbuffers-1.12-py2.py3-none-any.whl (15 kB)
+Collecting grpcio~=1.34.0
+  Downloading grpcio-1.34.1-cp38-cp38-macosx_10_10_x86_64.whl (3.7 MB)
+     |████████████████████████████████| 3.7 MB 10.1 MB/s 
+Requirement already satisfied: numpy~=1.19.2 in /opt/anaconda3/lib/python3.8/site-packages (from tensorflow) (1.19.2)
+Collecting keras-nightly~=2.5.0.dev
+  Downloading keras_nightly-2.5.0.dev2021032900-py2.py3-none-any.whl (1.2 MB)
+     |████████████████████████████████| 1.2 MB 3.7 MB/s 
+Collecting astunparse~=1.6.3
+  Downloading astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+Collecting wrapt~=1.12.1
+  Downloading wrapt-1.12.1.tar.gz (27 kB)
+Requirement already satisfied: wheel~=0.35 in /opt/anaconda3/lib/python3.8/site-packages (from tensorflow) (0.35.1)
+Collecting h5py~=3.1.0
+  Downloading h5py-3.1.0-cp38-cp38-macosx_10_9_x86_64.whl (2.9 MB)
+     |████████████████████████████████| 2.9 MB 58.2 MB/s 
+Requirement already satisfied: typing-extensions~=3.7.4 in /opt/anaconda3/lib/python3.8/site-packages (from tensorflow) (3.7.4.3)
+Requirement already satisfied: werkzeug>=0.11.15 in /opt/anaconda3/lib/python3.8/site-packages (from tensorboard~=2.5->tensorflow) (1.0.1)
+Collecting google-auth<2,>=1.6.3
+  Downloading google_auth-1.33.0-py2.py3-none-any.whl (151 kB)
+     |████████████████████████████████| 151 kB 3.5 MB/s 
+Requirement already satisfied: setuptools>=41.0.0 in /opt/anaconda3/lib/python3.8/site-packages (from tensorboard~=2.5->tensorflow) (50.3.1.post20201107)
+Collecting tensorboard-data-server<0.7.0,>=0.6.0
+  Downloading tensorboard_data_server-0.6.1-py3-none-macosx_10_9_x86_64.whl (3.5 MB)
+     |████████████████████████████████| 3.5 MB 9.2 MB/s 
+Collecting google-auth-oauthlib<0.5,>=0.4.1
+  Downloading google_auth_oauthlib-0.4.4-py2.py3-none-any.whl (18 kB)
+Collecting markdown>=2.6.8
+  Downloading Markdown-3.3.4-py3-none-any.whl (97 kB)
+     |████████████████████████████████| 97 kB 4.1 MB/s 
+Collecting tensorboard-plugin-wit>=1.6.0
+  Downloading tensorboard_plugin_wit-1.8.0-py3-none-any.whl (781 kB)
+     |████████████████████████████████| 781 kB 5.6 MB/s 
+Requirement already satisfied: requests<3,>=2.21.0 in /opt/anaconda3/lib/python3.8/site-packages (from tensorboard~=2.5->tensorflow) (2.24.0)
+Collecting pyasn1-modules>=0.2.1
+  Downloading pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
+     |████████████████████████████████| 155 kB 19.4 MB/s 
+Collecting cachetools<5.0,>=2.0.0
+  Downloading cachetools-4.2.2-py3-none-any.whl (11 kB)
+Collecting rsa<5,>=3.1.4; python_version >= "3.6"
+  Downloading rsa-4.7.2-py3-none-any.whl (34 kB)
+Collecting requests-oauthlib>=0.7.0
+  Downloading requests_oauthlib-1.3.0-py2.py3-none-any.whl (23 kB)
+Requirement already satisfied: certifi>=2017.4.17 in /opt/anaconda3/lib/python3.8/site-packages (from requests<3,>=2.21.0->tensorboard~=2.5->tensorflow) (2020.6.20)
+Requirement already satisfied: idna<3,>=2.5 in /opt/anaconda3/lib/python3.8/site-packages (from requests<3,>=2.21.0->tensorboard~=2.5->tensorflow) (2.10)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /opt/anaconda3/lib/python3.8/site-packages (from requests<3,>=2.21.0->tensorboard~=2.5->tensorflow) (1.25.11)
+Requirement already satisfied: chardet<4,>=3.0.2 in /opt/anaconda3/lib/python3.8/site-packages (from requests<3,>=2.21.0->tensorboard~=2.5->tensorflow) (3.0.4)
+Collecting pyasn1<0.5.0,>=0.4.6
+  Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+     |████████████████████████████████| 77 kB 8.1 MB/s 
+Collecting oauthlib>=3.0.0
+  Downloading oauthlib-3.1.1-py2.py3-none-any.whl (146 kB)
+     |████████████████████████████████| 146 kB 10.9 MB/s 
+Building wheels for collected packages: termcolor, wrapt
+  Building wheel for termcolor (setup.py) ... done
+  Created wheel for termcolor: filename=termcolor-1.1.0-py3-none-any.whl size=4830 sha256=4a7a70ac4c3fc017d405255c9b3a2f084f9feeafa4fac81b8bedd15fc02c517f
+  Stored in directory: /Users/andrew/Library/Caches/pip/wheels/a0/16/9c/5473df82468f958445479c59e784896fa24f4a5fc024b0f501
+  Building wheel for wrapt (setup.py) ... done
+  Created wheel for wrapt: filename=wrapt-1.12.1-py3-none-any.whl size=19552 sha256=0e9f80f1856f825ef749171918132c9ad8721813b934775207c48f48be364d1b
+  Stored in directory: /Users/andrew/Library/Caches/pip/wheels/5f/fd/9e/b6cf5890494cb8ef0b5eaff72e5d55a70fb56316007d6dfe73
+Successfully built termcolor wrapt
+Installing collected packages: protobuf, gast, keras-preprocessing, tensorflow-estimator, absl-py, google-pasta, termcolor, pyasn1, pyasn1-modules, cachetools, rsa, google-auth, tensorboard-data-server, oauthlib, requests-oauthlib, google-auth-oauthlib, markdown, tensorboard-plugin-wit, grpcio, tensorboard, opt-einsum, flatbuffers, keras-nightly, astunparse, wrapt, h5py, tensorflow
+  Attempting uninstall: wrapt
+    Found existing installation: wrapt 1.11.2
+    Uninstalling wrapt-1.11.2:
+      Successfully uninstalled wrapt-1.11.2
+  Attempting uninstall: h5py
+    Found existing installation: h5py 2.10.0
+    Uninstalling h5py-2.10.0:
+      Successfully uninstalled h5py-2.10.0
+Successfully installed absl-py-0.13.0 astunparse-1.6.3 cachetools-4.2.2 flatbuffers-1.12 gast-0.4.0 google-auth-1.33.0 google-auth-oauthlib-0.4.4 google-pasta-0.2.0 grpcio-1.34.1 h5py-3.1.0 keras-nightly-2.5.0.dev2021032900 keras-preprocessing-1.1.2 markdown-3.3.4 oauthlib-3.1.1 opt-einsum-3.3.0 protobuf-3.17.3 pyasn1-0.4.8 pyasn1-modules-0.2.8 requests-oauthlib-1.3.0 rsa-4.7.2 tensorboard-2.5.0 tensorboard-data-server-0.6.1 tensorboard-plugin-wit-1.8.0 tensorflow-2.5.0 tensorflow-estimator-2.5.0 termcolor-1.1.0 wrapt-1.12.1
